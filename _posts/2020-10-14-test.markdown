@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Test Article!"
+date:   2020-10-14 10:25:43 +0200
+categories: test news
+---
+
+Hey, whats up?
