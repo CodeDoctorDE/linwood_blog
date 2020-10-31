@@ -15,7 +15,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn
-    - run: yarn build --if-present
+    - run: yarn build
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.5.8
       with:
