@@ -1,5 +1,6 @@
-import { Box, Container, Link, Typography } from "@material-ui/core"
+import { Box, Container, Typography } from "@material-ui/core"
 import React from "react"
+import Link from '../src/Link'
 
 export default function Index() {
     return (
