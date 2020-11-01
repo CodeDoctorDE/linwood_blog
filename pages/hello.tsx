@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import React from 'react';
-import Apps from '../components/Apps';
-import Layout from '../components/Layout';
+import Apps from '../src/Apps';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <div title="Home | Next.js + TypeScript Example">
     <h1>Hello Next.js 👋</h1>
     <p>
       <Link href="/about">
@@ -13,7 +12,7 @@ const IndexPage = () => (
       <p>Apps:</p>
       <Apps />
     </p>
-  </Layout>
+  </div>
 )
 
 export default IndexPage
