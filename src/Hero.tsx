@@ -1,4 +1,4 @@
-import { Container, makeStyles, withStyles } from '@material-ui/core';
+import { Container, makeStyles } from '@material-ui/core';
 import React, { ReactNode } from 'react'
 
 interface Props {
@@ -7,6 +7,9 @@ interface Props {
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.background.paper
+    },
+    content: {
+        padding: theme.spacing(8, 0, 6)
     }
 }));
 
@@ -17,7 +20,7 @@ export default function Hero(props: React.PropsWithChildren<Props>){
             <div>
                 {props.left}
             </div>
-            <Container maxWidth="sm">
+            <Container className={classes.content} maxWidth="sm">
                 <div>
                     { props.children }
                 </div>
