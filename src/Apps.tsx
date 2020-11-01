@@ -6,9 +6,9 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import CakeOutlinedIcon from '@material-ui/icons/CakeOutlined';
 import SportsEsportsOutlinedIcon from '@material-ui/icons/SportsEsportsOutlined';
-import AttachMoneyOutlinedIcon from '@material-ui/icons/AttachMoneyOutlined';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import NoteOutlinedIcon from '@material-ui/icons/NoteOutlined';
+import SpaOutlinedIcon  from '@material-ui/icons/SpaOutlined';
 
 interface Props {
 
@@ -90,7 +90,7 @@ export default function Apps({ }: Props): ReactElement {
                                             </Tooltip>
                                             <Tooltip title="Karma">
                                                 <IconButton aria-controls="fade-menu" aria-haspopup="true">
-                                                    <AttachMoneyOutlinedIcon />
+                                                    <SpaOutlinedIcon />
                                                 </IconButton>
                                             </Tooltip>
                                             <Tooltip title="Notification">
