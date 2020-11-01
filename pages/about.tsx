@@ -12,7 +12,7 @@ export default function About() {
         <Typography variant="h4" component="h1" gutterBottom>
           Next.js example
         </Typography>
-        <Button  {...{component: Link, href:"/about", naked: true}} color="default" variant="contained">About</Button>
+        <Button {...{component: Link, href:"/about", naked: true}} color="default" variant="contained">About</Button>
 
         <Link href="/" color="secondary">Go to the main page</Link>
       </Box>
