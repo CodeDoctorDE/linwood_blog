@@ -1,4 +1,3 @@
-import classes from '*.module.css'
 import { createStyles, Grid, makeStyles, Paper, Theme, Typography } from '@material-ui/core'
 import React, { ReactElement } from 'react'
 import Link from './Link';
