@@ -1,1 +1,172 @@
-<!DOCTYPE html><html><head><title>Home | Next.js + TypeScript Example</title><meta charSet="utf-8"/><meta name="viewport" content="initial-scale=1.0, width=device-width"/><noscript data-n-css="true"></noscript><link rel="preload" href="/Blog/_next/static/chunks/main-41d3c27d79bb2d514dc2.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/framework.5d60beefb1049bf36b51.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/commons.d97555756e907400d4f3.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/pages/_app-e736a2eb031d5171fbe2.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/pages/hello-7946f782c017b4286434.js" as="script"/></head><body><div id="__next"><div><header><nav><a href="/Blog">Home</a> <!-- -->|<!-- --> <a href="/Blog/about">About</a> <!-- -->|<!-- --> <a href="/Blog/users">Users List</a> <!-- -->| <a href="/api/users">Users API</a></nav></header><h1>Hello Next.js 👋</h1><p><a href="/Blog/about">About</a></p><footer><hr/><span>I&#x27;m here to stay (Footer)</span></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/hello","query":{},"buildId":"wTUffEzrTwIvpcwBti2a2","assetPrefix":"/Blog","nextExport":true,"autoExport":true,"isFallback":false,"head":[["title",{"children":"Home | Next.js + TypeScript Example"}],["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"initial-scale=1.0, width=device-width"}]]}</script><script nomodule="" src="/Blog/_next/static/chunks/polyfills-fa276ba060a4a8ac7eef.js"></script><script src="/Blog/_next/static/chunks/main-41d3c27d79bb2d514dc2.js" async=""></script><script src="/Blog/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" async=""></script><script src="/Blog/_next/static/chunks/framework.5d60beefb1049bf36b51.js" async=""></script><script src="/Blog/_next/static/chunks/commons.d97555756e907400d4f3.js" async=""></script><script src="/Blog/_next/static/chunks/pages/_app-e736a2eb031d5171fbe2.js" async=""></script><script src="/Blog/_next/static/chunks/pages/hello-7946f782c017b4286434.js" async=""></script><script src="/Blog/_next/static/wTUffEzrTwIvpcwBti2a2/_buildManifest.js" async=""></script><script src="/Blog/_next/static/wTUffEzrTwIvpcwBti2a2/_ssgManifest.js" async=""></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta name="theme-color" content="#556cd6"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"/><meta charSet="utf-8"/><title>My page</title><meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/><noscript data-n-css="true"></noscript><link rel="preload" href="/Blog/_next/static/chunks/main-eb319e9a1edf112bf08d.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/framework.5d60beefb1049bf36b51.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/commons.d97555756e907400d4f3.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/d7fde0e2bba8c4155853b45cffe7d2deebe6ed80.658b5c4fedb5ecc39474.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/pages/_app-417bd77adbed847bf4a4.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/24f8bb22db0185b5aaa1e78dd5e0c7037accd88e.690da318301fa3ca214a.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/7e467e64474cc9d988765046143e72cbe5448810.78f5f057d4f721743125.js" as="script"/><link rel="preload" href="/Blog/_next/static/chunks/pages/hello-b771f665bb31e63d722a.js" as="script"/><style id="jss-server-side">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fff;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fff;
+}
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #556cd6;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #19857b;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #ff1744;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #556cd6;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(85, 108, 214, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #19857b;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(25, 133, 123, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .jss1 {
+    padding: 1em;
+  }
+  .jss2 {
+    padding: 1em;
+    max-width: 10em;
+    text-align: center;
+  }</style></head><body><div id="__next"><div title="Home | Next.js + TypeScript Example"><h1>Hello Next.js 👋</h1><p><a href="/Blog/about">About</a><p>Apps:</p><div><button class="MuiButtonBase-root MuiIconButton-root jss1" tabindex="0" type="button" aria-haspopup="true"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path></svg></span></button></div></p></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/hello","query":{},"buildId":"lgoZnhf-lggvzehQ8AETS","assetPrefix":"/Blog","nextExport":true,"autoExport":true,"isFallback":false,"head":[["meta",{"charSet":"utf-8"}],["title",{"children":"My page"}],["meta",{"name":"viewport","content":"minimum-scale=1, initial-scale=1, width=device-width"}]]}</script><script nomodule="" src="/Blog/_next/static/chunks/polyfills-83732ebf2ed7f8a1b2c7.js"></script><script src="/Blog/_next/static/chunks/main-eb319e9a1edf112bf08d.js" async=""></script><script src="/Blog/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" async=""></script><script src="/Blog/_next/static/chunks/framework.5d60beefb1049bf36b51.js" async=""></script><script src="/Blog/_next/static/chunks/commons.d97555756e907400d4f3.js" async=""></script><script src="/Blog/_next/static/chunks/d7fde0e2bba8c4155853b45cffe7d2deebe6ed80.658b5c4fedb5ecc39474.js" async=""></script><script src="/Blog/_next/static/chunks/pages/_app-417bd77adbed847bf4a4.js" async=""></script><script src="/Blog/_next/static/chunks/24f8bb22db0185b5aaa1e78dd5e0c7037accd88e.690da318301fa3ca214a.js" async=""></script><script src="/Blog/_next/static/chunks/7e467e64474cc9d988765046143e72cbe5448810.78f5f057d4f721743125.js" async=""></script><script src="/Blog/_next/static/chunks/pages/hello-b771f665bb31e63d722a.js" async=""></script><script src="/Blog/_next/static/lgoZnhf-lggvzehQ8AETS/_buildManifest.js" async=""></script><script src="/Blog/_next/static/lgoZnhf-lggvzehQ8AETS/_ssgManifest.js" async=""></script></body></html>
