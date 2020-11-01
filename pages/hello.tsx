@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react';
+import Apps from '../components/Apps';
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
@@ -9,6 +10,8 @@ const IndexPage = () => (
       <Link href="/about">
         <a>About</a>
       </Link>
+      <p>Apps:</p>
+      <Apps />
     </p>
   </Layout>
 )
