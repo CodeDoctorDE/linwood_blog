@@ -9,10 +9,11 @@ import SportsEsportsOutlinedIcon from '@material-ui/icons/SportsEsportsOutlined'
 import AttachMoneyOutlinedIcon from '@material-ui/icons/AttachMoneyOutlined';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import NoteOutlinedIcon from '@material-ui/icons/NoteOutlined';
+
 interface Props {
 
 }
-export type ExpandStatus = '' | 'Linwood' | 'Gaming'
+export type ExpandStatus = '' | 'Apps' | 'Info'
 
 const useStyles = makeStyles({
     button: {
@@ -20,7 +21,7 @@ const useStyles = makeStyles({
     },
     menu: {
         padding: '1em',
-        maxWidth: '10em',
+        maxWidth: '11em',
         textAlign: 'center'
     }
   });
@@ -33,7 +34,7 @@ export default function Apps({ }: Props): ReactElement {
     const handleToggle = () => {
         setOpen((prevOpen) => !prevOpen);
     };
-    const [expanded, setExpanded] = React.useState<ExpandStatus>('Linwood');
+    const [expanded, setExpanded] = React.useState<ExpandStatus>('Apps');
 
     const handleExpand = (group: ExpandStatus) => {
         setExpanded(expanded === group ? '' : group);
@@ -66,11 +67,11 @@ export default function Apps({ }: Props): ReactElement {
                         <Paper className={classes.menu}>
                             <ClickAwayListener onClickAway={handleClose}>
                                 <Box>
-                                    <ListItem button onClick={() => handleExpand('Linwood')}>
-                                        <ListItemText primary="Linwood" />
-                                        {expanded === 'Linwood' ? <ExpandLess /> : <ExpandMore />}
+                                    <ListItem button onClick={() => handleExpand('Apps')}>
+                                        <ListItemText primary="Apps" />
+                                        {expanded === 'Apps' ? <ExpandLess /> : <ExpandMore />}
                                     </ListItem>
-                                    <Collapse in={expanded === 'Linwood'} timeout="auto" >
+                                    <Collapse in={expanded === 'Apps'} timeout="auto" >
                                         <List component="div" disablePadding>
                                             <Tooltip title="Bot">
                                                 <IconButton aria-controls="fade-menu" aria-haspopup="true">
@@ -100,23 +101,6 @@ export default function Apps({ }: Props): ReactElement {
                                             <Tooltip title="Template">
                                                 <IconButton aria-controls="fade-menu" aria-haspopup="true">
                                                     <NoteOutlinedIcon />
-                                                </IconButton>
-                                            </Tooltip>
-                                        </List>
-                                    </Collapse>
-                                    <ListItem button onClick={() => handleExpand('Gaming')}>
-                                        <ListItemText primary="Gaming" />
-                                        {expanded === 'Gaming' ? <ExpandLess /> : <ExpandMore />}
-                                    </ListItem>
-                                    <Collapse in={expanded === 'Gaming'} timeout="auto" unmountOnExit>
-                                        <List component="div" disablePadding>
-                                            <Tooltip title="Bot">
-                                                <IconButton aria-controls="fade-menu" aria-haspopup="true">
-                                                    <ChatBubbleOutlineOutlinedIcon />
-                                                </IconButton></Tooltip>
-                                            <Tooltip title="Bot">
-                                                <IconButton aria-controls="fade-menu" aria-haspopup="true">
-                                                    <ChatBubbleOutlineOutlinedIcon />
                                                 </IconButton>
                                             </Tooltip>
                                         </List>

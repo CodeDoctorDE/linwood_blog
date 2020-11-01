@@ -2,14 +2,15 @@ import { Container, makeStyles } from '@material-ui/core';
 import React, { ReactNode } from 'react'
 
 interface Props {
-    left?: ReactNode
+    nav?: ReactNode
 }
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.background.paper
     },
     content: {
-        padding: theme.spacing(8, 0, 6)
+        padding: theme.spacing(10, 0, 10),
+        minHeight: '100%'
     }
 }));
 
@@ -18,7 +19,7 @@ export default function Hero(props: React.PropsWithChildren<Props>){
     return (
         <div className={classes.root}>
             <div>
-                {props.left}
+                {props.nav}
             </div>
             <Container className={classes.content} maxWidth="sm">
                 <div>
