@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
     }
   })
 );
-export default function Index() {
+export default function IndexPage() {
   const classes = useStyles();
   return (
     <div className={classes.root}>

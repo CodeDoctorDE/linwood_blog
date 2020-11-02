@@ -14,7 +14,14 @@ module.exports = {
         rule.options.cacheDirectory = false
       }
       return rule
-    })
+    });
+    config.module.rules.push({
+      test: /\.svg$/,
+      issuer: {
+        test: /\.(js|ts)x?$/,
+      },
+      use: ['@svgr/webpack'],
+    });
     // Important: return the modified config
     return config
   }/*,

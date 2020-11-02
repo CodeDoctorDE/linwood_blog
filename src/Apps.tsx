@@ -1,4 +1,4 @@
-import { Box, ClickAwayListener, Collapse, Grow, IconButton, List, ListItem, ListItemText, makeStyles, Paper, Popper, Tooltip } from '@material-ui/core'
+import { Box, ClickAwayListener, Collapse, Grow, IconButton, List, ListItem, ListItemText, makeStyles, Paper, Popper, Tooltip, SvgIcon, Theme } from '@material-ui/core';
 import React, { ReactElement } from 'react'
 import AppsOutlinedIcon from '@material-ui/icons/AppsOutlined'
 import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineOutlined'
@@ -9,22 +9,23 @@ import SportsEsportsOutlinedIcon from '@material-ui/icons/SportsEsportsOutlined'
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import NoteOutlinedIcon from '@material-ui/icons/NoteOutlined';
 import SpaOutlinedIcon  from '@material-ui/icons/SpaOutlined';
+import DiscordLogo from '../assets/Discord-Logo-Black.svg';
 
 interface Props {
 
 }
-export type ExpandStatus = '' | 'Apps' | 'Info'
+export type ExpandStatus = '' | 'Apps' | 'Platform'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme : Theme) => ({
     button: {
-      padding: '1em',
+      padding: theme.spacing(2),
     },
     menu: {
-        padding: '1em',
-        maxWidth: '11em',
+        padding: theme.spacing(2),
+        maxWidth: '13em',
         textAlign: 'center'
     }
-  });
+  }));
 export default function Apps({ }: Props): ReactElement {
     const classes = useStyles();
 
@@ -101,6 +102,19 @@ export default function Apps({ }: Props): ReactElement {
                                             <Tooltip title="Template">
                                                 <IconButton aria-controls="fade-menu" aria-haspopup="true">
                                                     <NoteOutlinedIcon />
+                                                </IconButton>
+                                            </Tooltip>
+                                        </List>
+                                    </Collapse>
+                                    <ListItem button onClick={() => handleExpand('Platform')}>
+                                        <ListItemText primary="Platforms" />
+                                        {expanded === 'Platform' ? <ExpandLess /> : <ExpandMore />}
+                                    </ListItem>
+                                    <Collapse in={expanded === 'Platform'} timeout="auto" >
+                                        <List component="div" disablePadding>
+                                            <Tooltip title="Discord">
+                                                <IconButton aria-controls="fade-menu" aria-haspopup="true">
+                                                    <SvgIcon component={DiscordLogo} viewBox="0 0 245 240" />
                                                 </IconButton>
                                             </Tooltip>
                                         </List>
