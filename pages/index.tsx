@@ -1,4 +1,4 @@
-import { Container, createStyles, Grid, makeStyles, Paper, SvgIcon, Typography, Theme } from '@material-ui/core';
+import { Container, createStyles, makeStyles, Paper, SvgIcon, Typography, Theme } from '@material-ui/core';
 import React from "react"
 import { Fade, Zoom } from "react-awesome-reveal";
 import Apps from "../src/Apps";
