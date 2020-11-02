@@ -46,8 +46,8 @@ export default function Footer({}: Props): ReactElement {
             <Grid item xs={12} sm={6}>
               <Paper className={`${classes.paper} ${classes.center}`}>
         	    <Typography>Social media</Typography>
-              <IconButton {...{component: Link, href:"#", naked: true}}><TwitterIcon /></IconButton>
-              <IconButton {...{component: Link, href:"#", naked: true}}><YouTubeIcon /></IconButton>
+              <IconButton {...{component: Link, href:"https://twitter.com/LinwoodCloud", naked: true}}><TwitterIcon /></IconButton>
+              <IconButton {...{component: Link, href:"https://www.youtube.com/channel/UCzaPZfCZulC83b-gcK4l9EA", naked: true}}><YouTubeIcon /></IconButton>
               </Paper>
             </Grid>
           </Grid>
